@@ -32,12 +32,26 @@
             align-items: center;
             justify-content: center;
             background-color: black;
+            pointer-events: none;
+            transition: background 150ms ease-in;
+        }
+
+        main:hover {
+            background-color: whitesmoke;
         }
 
         main h1 {
             font-size: 10em;
-            color: #6ac2d8;
             color: whitesmoke;
+            transition: color 150ms ease-in;
+        }
+
+        main h1:hover {
+            color: black;
+        }
+
+        main > h1 {
+            pointer-events: auto;
         }
     </style>
 </head>
